@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>传情设备</title>
+    <link rel="stylesheet" type="text/css" href="../jquery.slideBox.css"/>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*img{
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+        }*/
+        .kuang {
+            width: 1920px;
+            height: 1080px;
+            /*background:blue;*/
+            padding: 50px 70px;
+            box-sizing: border-box;
+        }
+
+        .nei {
+            width: 100%;
+            height: 100%;
+            /*background: blue;*/
+        }
+
+        .shang {
+            width: 100%;
+            height: 180px;
+            border-radius: 8px;
+            background: #1dceba;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .shang > img {
+            margin-left: 70px;
+            margin-top: 48px;
+        }
+
+        .dianji {
+            float: right;
+            margin-right: 36px;
+        }
+
+        .dianji > div {
+            width: 158px;
+            height: 180px;
+            float: right;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .dianji > div:hover {
+            background: url(../top-btn-active.png) no-repeat;
+            background-size: 100% 100%;
+            cursor: pointer
+        }
+
+        .dianji > div > img {
+            margin: 30px 33px 0px;
+        }
+
+        .dianji > div > p {
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .example {
+            width: 1780px;
+            height: 768px;
+        }
+
+        .ft-carousel > span {
+            /*display: none;*/
+        }
+
+        .banner {
+            width: 1780px;
+            height: 768px;
+            margin-top: 50px;
+        }
+
+        .top_zt {
+            width: 216px;
+            height: 87px;
+            position: absolute;
+            top: 0;
+            right: 388px;
+            background: url(../condition-bg.png) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .top_zt > p {
+            margin-top: 30px;
+            line-height: 54px;
+            text-align: center;
+            color: #1dceba;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .items > li, .items > li > a, .items > li > a > img {
+            float: left;
+            margin: 0 -0.6px 0 0 !important;
+            padding: 0 !important;
+        }
+       </style>
+</head>
+<body>
+<div class="kuang">
+    <div class="nei">
+        <div class="shang">
+            <img src="../logo.png"/>
+            <div class="dianji">
+                <div class="">
+                    <img src="../top-btn-ls.png"/>
+                    <p>历史纪录</p>
+                </div>
+                <div class="">
+                    <img src="../top-btn-sy.png"/>
+                    <p>首页</p>
+                </div>
+            </div>
+            <div class="top_zt">
+                <p>运行中</p>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div id="newspic" class="slideBox">
+                <ul class="items">
+                    <li><a href="#" title=""><img src="../banner1.png"></a></li>
+                    <li><a href="#" title=""><img src="../banner2.png"></a></li>
+                    <li><a href="#" title=""><img src="../banner1.png"></a></li>
+                    <li><a href="#" title=""><img src="../banner2.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="../jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../jquery.slideBox.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    jQuery(function ($) {
+        $('#newspic').slideBox({
+            duration: 0.3, //滚动持续时间，单位：秒
+            easing: 'linear', //swing,linear//滚动特效
+            delay: 5, //滚动延迟时间，单位：秒
+            hideClickBar: false, //不自动隐藏点选按键
+            clickBarRadius: 10
+        });
+    });
+    $(".dianji>div").click(function () {
+        var txt = $(this).text().replace(/^\s+|\s+$/g, "");
+        if (txt == "首页") {
+            var zt = $(".top_zt").text().replace(/^\s+|\s+$/g, "");
+            if (zt == "运行中") {
+                window.location.href = "sy-yx.html";
+            } else {
+                window.location.href = "index.html";
+            }
+        } else {
+            window.location.href = "lsjl.html";
+        }
+    })
+</script>
