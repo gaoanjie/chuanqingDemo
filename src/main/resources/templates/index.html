@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>传情设备</title>
+    <title>首页</title>
     <link rel="stylesheet" type="text/css" href="../jquery.slideBox.css"/>
     <style type="text/css">
         * {
@@ -29,6 +29,7 @@
             height: 1080px;
             /*background:blue;*/
             padding: 50px 70px;
+            background: #f2f2f2;
             box-sizing: border-box;
         }
 
@@ -68,7 +69,7 @@
         }
 
         .dianji > div:hover {
-            background: url(../top-btn-active.png) no-repeat;
+            background: url(img/top-btn-active.png) no-repeat;
             background-size: 100% 100%;
             cursor: pointer
         }
@@ -87,6 +88,7 @@
         .example {
             width: 1780px;
             height: 768px;
+
         }
 
         .ft-carousel > span {
@@ -105,7 +107,7 @@
             position: absolute;
             top: 0;
             right: 388px;
-            background: url(../condition-bg.png) no-repeat;
+            background: url(img/condition-bg.png) no-repeat;
             background-size: 100% 100%;
         }
 
@@ -123,8 +125,9 @@
             margin: 0 -0.6px 0 0 !important;
             padding: 0 !important;
         }
-       </style>
+    </style>
 </head>
+
 <body>
 <div class="kuang">
     <div class="nei">
@@ -132,16 +135,21 @@
             <img src="../logo.png"/>
             <div class="dianji">
                 <div class="">
+
                     <img src="../top-btn-ls.png"/>
                     <p>历史纪录</p>
                 </div>
-                <div class="">
+                <div class="" style="position: relative;">
+                    <img src="../top-btn-active.png"
+                         style="z-index: 1;position: absolute;top: 0;right: 0;margin: 0;padding: 0;"/>
                     <img src="../top-btn-sy.png"/>
                     <p>首页</p>
                 </div>
             </div>
             <div class="top_zt">
-                <p>运行中</p>
+                <img src="../condition-bg.png"
+                     style="position: absolute;top: 0;right: 0;margin: 0;padding: 0;z-index: 1;"/>
+                <p style="position: absolute;z-index: 555;width: 218px;">运行中</p>
             </div>
         </div>
 
@@ -150,11 +158,12 @@
                 <ul class="items">
                     <li><a href="#" title=""><img src="../banner1.png"></a></li>
                     <li><a href="#" title=""><img src="../banner2.png"></a></li>
-                    <li><a href="#" title=""><img src="../banner1.png"></a></li>
-                    <li><a href="#" title=""><img src="../banner2.png"></a></li>
                 </ul>
             </div>
+
         </div>
+
+
     </div>
 </div>
 </body>
@@ -177,11 +186,15 @@
             var zt = $(".top_zt").text().replace(/^\s+|\s+$/g, "");
             if (zt == "运行中") {
                 window.location.href = "sy-yx.html";
+                console.log(zt)
             } else {
                 window.location.href = "index.html";
+                console.log(zt)
             }
+            console.log(txt)
         } else {
             window.location.href = "lsjl.html";
+            console.log(txt)
         }
     })
 </script>
