@@ -2,6 +2,9 @@ package com.jy.chuanqing.domain;
 
 import java.sql.Timestamp;
 
+/**
+ * 数据表historyrecord共五个字段
+ * */
 public class HistoryRecord {
     private Integer id;
     private String transferdirection;

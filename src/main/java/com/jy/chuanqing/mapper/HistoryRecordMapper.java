@@ -10,7 +10,9 @@ import java.util.List;
 @Mapper
 @Repository
 public interface HistoryRecordMapper {
-
+/**
+ * 查询全部
+ * */
     @Select("Select * from historyrecord")
     List<HistoryRecord> selectAllHistoryRecord();
 }
