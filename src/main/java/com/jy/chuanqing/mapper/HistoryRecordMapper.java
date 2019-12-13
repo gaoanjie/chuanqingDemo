@@ -13,6 +13,6 @@ public interface HistoryRecordMapper {
 /**
  * 查询全部
  * */
-    @Select("Select * from historyrecord")
+    @Select("Select * from historyrecord order by id asc")
     List<HistoryRecord> selectAllHistoryRecord();
 }

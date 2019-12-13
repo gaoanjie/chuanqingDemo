@@ -3,7 +3,7 @@ package com.jy.chuanqing.domain;
 import java.sql.Timestamp;
 
 /**
- * 数据表historyrecord共五个字段
+ * 数据表historyrecord共六个字段
  */
 public class HistoryRecord {
     private Integer id;
@@ -11,6 +11,7 @@ public class HistoryRecord {
     private Timestamp requesttime;
     private String sourcepath;
     private String targetpath;
+    private Integer runningstatus;
 
     public Integer getId() {
         return id;
@@ -50,5 +51,13 @@ public class HistoryRecord {
 
     public void setTargetpath(String targetpath) {
         this.targetpath = targetpath;
+    }
+
+    public Integer getRunningstatus() {
+        return runningstatus;
+    }
+
+    public void setRunningstatus(Integer runningstatus) {
+        this.runningstatus = runningstatus;
     }
 }
