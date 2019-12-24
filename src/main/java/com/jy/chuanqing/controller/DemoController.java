@@ -11,13 +11,13 @@ public class DemoController {
     @Autowired
     HistoryRecordService historyRecordService;
 
-    @RequestMapping("lsjl.html")
+    @RequestMapping("record.html")
     /**
      * 把list放入model中，在html中通过thymeleaf的th标签直接引用
      **/
     public String HistoryRecord(Model model) {
         model.addAttribute("historyrecordlist", historyRecordService.selectAllHistoryRecord());
-        return "lsjl";
+        return "record";
     }
 
     @RequestMapping("index")
