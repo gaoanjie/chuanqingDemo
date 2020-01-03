@@ -1,0 +1,20 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jy.chuanqing.mapper.HistoryRecordMapper">
+
+    <resultMap type="com.jy.chuanqing.domain.HistoryRecord" id="HistoryRecord">
+        <id     property="id"                   column="id"                 />
+        <result property="transferdirection"    column="transferdirection"  />
+        <result property="requesttime"          column="requesttime"        />
+        <result property="sourcepath"           column="sourcepath"         />
+        <result property="targetpath"           column="targetpath"         />
+        <result property="runningstatus"        column="runningstatus"      />
+    </resultMap>
+
+    <select id="selectHistoryRecord">
+        select  id,transferdirection,requesttime,sourcepath,targetpath,runningstatus
+		from historyrecord
+    </select>
+
+</mapper>

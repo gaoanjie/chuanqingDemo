@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>历史记录</title>
+    <link rel="stylesheet" type="text/css" href="../jquery.slideBox.css"/>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*img{
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+        }*/
+        .kuang {
+            width: 1920px;
+            height: 1080px;
+            /*background:blue;*/
+            padding: 50px 70px;
+            box-sizing: border-box;
+            background: #f2f2f2;
+        }
+
+        .nei {
+            width: 100%;
+            height: 100%;
+            /*background: blue;*/
+        }
+
+        .shang {
+            width: 100%;
+            height: 180px;
+            border-radius: 8px;
+            background: #1dceba;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /*.shang > img {*/
+        /*    margin-left: 70px;*/
+        /*    margin-top: 48px;*/
+        /*}*/
+
+        .dianji {
+            float: right;
+            margin-right: 36px;
+        }
+
+        .dianji > div {
+            width: 158px;
+            height: 180px;
+            float: right;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .dianji > div:hover {
+            background: url(img/top-btn-active.png) no-repeat;
+            background-size: 100% 100%;
+            cursor: pointer
+        }
+
+        .dianji > div > img {
+            margin: 30px 33px 0px;
+        }
+
+        .dianji > div > p {
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .lishi {
+            width: 1780px;
+            height: 768px;
+            margin-top: 50px;
+            border-radius: 10px;
+            background: #fff;
+            padding: 0 30px;
+            box-sizing: border-box;
+        }
+
+        .top_zt {
+            width: 216px;
+            height: 87px;
+            position: absolute;
+            top: 0;
+            right: 388px;
+            /*background: url(img/condition-bg.png)no-repeat;*/
+            /*background-size: 100%100%;*/
+        }
+
+        .top_zt > p {
+            margin-top: 30px;
+            line-height: 54px;
+            text-align: center;
+            color: #1dceba;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .lishi > h2 {
+            text-align: center;
+            line-height: 70px;
+            font-size: 32px;
+        }
+
+        table {
+            width: 1720px;
+            font-size: 16px;
+            text-align: left;
+            height: 60px;
+            line-height: 60px;
+            padding-left: 38px;
+            box-sizing: border-box;
+            border-collapse: collapse;
+            text-indent: 10px;
+        }
+
+        table th {
+            font-size: 22px;
+            background: #eeeeee;
+        }
+
+        table tr:nth-child(even) {
+            background: #f4fdfc;
+        }
+
+        table tr:nth-child(odd) {
+            background: #fff;
+        }
+
+        .tbkuang {
+            height: 615px;
+            width: 1720px;
+            padding-bottom: 25px;
+            box-sizing: border-box;
+            /*overflow:overlay;*/
+            /*overflow: hidden;*/
+            overflow: auto;
+        }
+
+        .tbkuang > table {
+            float: left;
+            width: 1680px;
+        }
+
+        /*滚动条样式*/
+        .tbkuang::-webkit-scrollbar { /*滚动条整体样式*/
+            width: 10px; /*高宽分别对应横竖滚动条的尺寸*/
+            height: 1px;
+        }
+
+        .tbkuang::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+            background: #535353;
+            /*background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);*/
+        }
+
+        }
+        .tbkuang::-webkit-scrollbar-track { /*滚动条里面轨道*/
+            -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            background: #EDEDED;
+        }
+    </style>
+</head>
+<body>
+<div class="kuang">
+    <div class="nei">
+        <div class="shang">
+            <img src="../logo.png"/>
+            <div class="dianji">
+                <div class="" style="position: relative;">
+                    <img src="../top-btn-active.png" style="position: absolute;top: 0;right: 0;margin: 0;padding: 0;"/>
+                    <img src="../top-btn-ls.png"/>
+                    <p>历史纪录</p>
+                </div>
+                <div class="">
+                    <img src="../top-btn-sy.png"/>
+                    <p>首页</p>
+                </div>
+            </div>
+            <div class="top_zt">
+                <img src="../condition-bg.png"
+                     style="position: absolute;top: 0;right: 0;margin: 0;padding: 0;z-index: 1;"/>
+                <p style="position: absolute;z-index: 555;width: 218px;">运行中</p>
+            </div>
+        </div>
+
+
+        <div class="lishi">
+            <h2>历史记录</h2>
+            <table border="0" cellspacing="" cellpadding="">
+                <tr>
+                    <th style="width: 100px;">序号</th>
+                    <th style="width: 160px;">传输方向</th>
+                    <th style="width: 200px;">请求时间</th>
+                    <th style="width: 400px;">源路径</th>
+                    <th style="width: 400px;">目标路径</th>
+                </tr>
+            </table>
+            <div class="tbkuang">
+                <table border="0" cellspacing="" cellpadding="">
+                    <tr class="lie" th:each="historyrecord:${historyrecordlist}">
+                        <td style="width: 100px;" th:text="${historyrecord.id}"></td>
+                        <td style="width: 160px;" th:text="${historyrecord.transferdirection}"></td>
+                        <td style="width: 200px;" th:text="${historyrecord.requesttime}"></td>
+                        <td style="width: 400px;" th:text="${historyrecord.sourcepath}"></td>
+                        <td style="width: 400px;" th:text="${historyrecord.targetpath}"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="../jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $(".dianji>div").click(function () {
+        var txt = $(this).text().replace(/^\s+|\s+$/g, "");
+        if (txt == "首页") {
+            console.log(txt)
+            var zt = $(".top_zt").text().replace(/^\s+|\s+$/g, "");
+            if (zt == "运行中") {
+                window.location.href = "state.html";
+            } else {
+                window.location.href = "index.html";
+            }
+        } else {
+            window.location.href = "record.html";
+        }
+    })
+</script>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>历史记录</title>
+    <link rel="stylesheet" type="text/css" href="../jquery.slideBox.css"/>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*img{
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
+        }*/
+        .kuang {
+            width: 1920px;
+            height: 1080px;
+            /*background:blue;*/
+            padding: 50px 70px;
+            background: #f2f2f2;
+            box-sizing: border-box;
+        }
+
+        .nei {
+            width: 100%;
+            height: 100%;
+            /*background: blue;*/
+        }
+
+        .shang {
+            width: 100%;
+            height: 180px;
+            border-radius: 8px;
+            background: #1dceba;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /*.shang > img {*/
+        /*    margin-left: 70px;*/
+        /*    margin-top: 48px;*/
+        /*}*/
+
+        .dianji {
+            float: right;
+            margin-right: 36px;
+        }
+
+        .dianji > div {
+            width: 158px;
+            height: 180px;
+            float: right;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .dianji > div:hover {
+            background: url(img/top-btn-active.png) no-repeat;
+            background-size: 100% 100%;
+            cursor: pointer
+        }
+
+        .dianji > div > img {
+            margin: 30px 33px 0px;
+        }
+
+        .dianji > div > p {
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .example {
+            width: 1780px;
+            height: 770px;
+
+        }
+
+        .ft-carousel > span {
+            /*display: none;*/
+        }
+
+        .sj {
+            width: 1780px;
+            height: 768px;
+            margin-top: 50px;
+            overflow: hidden;
+        }
+
+        .top_zt {
+            width: 216px;
+            height: 87px;
+            position: absolute;
+            top: 0;
+            right: 388px;
+            background: url(img/condition-bg.png) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .top_zt > p {
+            margin-top: 30px;
+            line-height: 54px;
+            text-align: center;
+            color: #1dceba;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+
+        .sj > div {
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .zuo {
+            width: 1005px;
+            height: 770px;
+            background: #4e90ff;
+            border-radius: 8px;
+            color: #fff;
+            padding: 50px 70px;
+        }
+
+        .zuo h2 {
+            line-height: 90px;
+            font-size: 28px;
+            font-weight: 400;
+        }
+
+        .zuo div {
+            padding: 30px 40px;
+            background: #4b87eb;
+            border-radius: 15px;
+        }
+
+        .zuo div:nth-of-type(1) > p {
+            line-height: 36px;
+            height: 36px;
+            font-size: 24px;
+        }
+
+        .zuo div:nth-of-type(2) > p {
+            font-size: 40px;
+        }
+
+        .zuo div img {
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+
+        .you {
+            width: 745px;
+            height: 770px;
+            background: #b099f6;
+            margin-left: 30px;
+            border-radius: 8px;
+            padding: 95px 170px 0;
+        }
+
+        .circle_step > div {
+            width: 410px;
+            height: 410px;
+            position: relative;
+        }
+
+        .circle_step > div > strong {
+            font-size: 80px;
+            color: #1dceba;
+            position: absolute;
+            top: 140px;
+            text-align: center;
+            display: block;
+            width: 100%;
+            left: 0;
+        }
+
+        .circle_step > div > strong > i {
+            font-size: 40px;
+        }
+
+        .circle_step.active > div > strong {
+            color: #1dceba;
+        }
+
+        .circle_step > p {
+            font-size: 40px;
+            width: 410px;
+            text-align: left;
+            margin: 0 auto;
+            margin-top: 40px;
+            color: #fff;
+            /*font-weight: 600;*/
+        }
+
+        .circle_step > p > span {
+            font-size: 48px;
+            font-weight: 600;
+            padding: 0 15px;
+        }
+
+        .circle_step > p > span > i {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+<div class="kuang">
+    <div class="nei">
+        <div class="shang">
+            <img src="../logo.png"/>
+            <div class="dianji">
+                <div class="">
+                    <img src="../top-btn-ls.png"/>
+                    <p>历史纪录</p>
+                </div>
+                <div class="" style="position: relative;">
+                    <img src="../top-btn-active.png"
+                         style="z-index: 1;position: absolute;top: 0;right: 0;margin: 0;padding: 0;"/>
+                    <img src="../top-btn-sy.png"/>
+                    <p>首页</p>
+                </div>
+            </div>
+            <div class="top_zt">
+                <img src="../condition-bg.png"
+                     style="position: absolute;top: 0;right: 0;margin: 0;padding: 0;z-index: 1;"/>
+                <p style="position: absolute;z-index: 555;width: 218px;">空闲中</p>
+            </div>
+        </div>
+        <div class="sj">
+            <div class="zuo">
+                <h2>传输路径</h2>
+                <div class="cslj">
+                    <p>源路径：http://www.192.168.0.010:1010/E;</p>
+                    <p>目标路径：http://www.192.168.0.010:1010/E;</p>
+                </div>
+                <h2>传输方向</h2>
+                <div class="csfx">
+                    <p>外网 → 内网</p>
+                    <!--<img src="img/jiantou.png" alt="" />-->
+                </div>
+            </div>
+            <div class="you">
+                <div id="circle_step_kuang" style="width: 155px;">
+                    <div class="circle_step" state='1' press_name='circle_step1' style="margin-left:0;">
+                        <div id="circle_step1"><strong class="xz"></strong></div>
+                        <p class="">已完成<span>dfg</span>，</p>
+                        <p class="">预计还有<span>30<i>s</i></span>完成</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="../jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../circle-progress.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    //初始化环形进度条
+    //var a=$(".circle_step>p:nth-of-type(1)>span").text().split("%")[0]/100;
+    var a = 0.5;
+    $(".circle_step>p:nth-of-type(1)>span").html("");
+    $(".circle_step>p:nth-of-type(1)>span").append(a * 100 + "<i>%</i>");
+    //alert(a)
+    //function create_circle(num,val_num){
+    $('#circle_step' + 1).circleProgress({
+        value: a,//你需要展示的值，值从0.0到1.0，默认值为0
+        size: 410,//环形图的大小，单位像素，默认值100
+        //初始角度，默认值为-Math.PI
+        startAngle: -Math.PI / 6 * 3,
+        reverse: false,//是否反向绘制圆弧和动画，默认值为false
+        lineCap: 'round',//圆弧的线头样式："butt"、"round"和"square"。默认值为"butt"
+        thickness: 40,//进度条圆弧的宽度。默认它自动为size的1/14大小，你可以设置你需要的值。默认值为auto
+        emptyFill: 'rgba(0, 0, 0, .1)',//空圆弧的颜色。默认值为"rgba(0, 0, 0, .1)"
+        fill: {
+            gradient: ["#A5DF41", "#A5DF41"]
+        }
+    }).on('circle-animation-progress', function (event, progress, stepValue) {//当图像正在绘制时的监听事件
+        $(this).find('strong').html(String((stepValue * 100).toFixed(2)) + '<i>%</i>');
+    });
+    console.log(-Math.PI / 4 * 3);
+    //首页和历史参数的点击跳转
+    $(".dianji>div").click(function () {
+        var txt = $(this).text().replace(/^\s+|\s+$/g, "");
+        if (txt == "首页") {
+            //获取当前运行状态，根据不同的运行状态跳转不同的页面
+            var zt = $(".top_zt").text().replace(/^\s+|\s+$/g, "");
+            if (zt == "运行中") {
+                console.log(zt)
+                window.location.href = "state.html";
+            } else {
+                window.location.href = "index.html";
+            }
+        } else {
+            window.location.href = "record.html";
+        }
+    })
+</script>
