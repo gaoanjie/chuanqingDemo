@@ -12,7 +12,7 @@
         <result property="runningstatus"        column="runningstatus"      />
     </resultMap>
 
-    <select id="selectHistoryRecord">
+    <select id="selectAllHistoryRecord">
         select  id,transferdirection,requesttime,sourcepath,targetpath,runningstatus
 		from historyrecord
     </select>
