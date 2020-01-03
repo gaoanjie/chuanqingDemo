@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2020f506-1d1d-4b15-8a36-0bd3c9ac5a8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/HistoryRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/HistoryRecordMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577761672355</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="传情展示数据，不要分页，框内展示,增加mapper.xml">
+      <created>1578044584493</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1578044584493</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,12 +241,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="传情展示数据，待分页" />
     <MESSAGE value="传情展示数据，不要分页，框内展示" />
-    <option name="LAST_COMMIT_MESSAGE" value="传情展示数据，不要分页，框内展示" />
+    <MESSAGE value="传情展示数据，不要分页，框内展示,增加mapper.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="传情展示数据，不要分页，框内展示,增加mapper.xml" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="433" y="109" key="CommitChangelistDialog2" timestamp="1577761670385">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="433" y="108" key="CommitChangelistDialog2" timestamp="1578044583468">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="433" y="108" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578044583468" />
     <state x="433" y="109" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1577761670385" />
     <state x="717" y="270" key="FileChooserDialogImpl" timestamp="1577760766889">
       <screen x="0" y="0" width="1920" height="1050" />
