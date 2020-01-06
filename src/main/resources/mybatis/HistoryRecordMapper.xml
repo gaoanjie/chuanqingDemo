@@ -12,9 +12,9 @@
         <result property="runningstatus"        column="runningstatus"      />
     </resultMap>
 
-    <select id="selectAllHistoryRecord">
+    <select id="selectAllHistoryRecord" resultMap="HistoryRecord">
         select  id,transferdirection,requesttime,sourcepath,targetpath,runningstatus
-		from historyrecord
+		from historyrecord order by id asc
     </select>
 
 </mapper>
