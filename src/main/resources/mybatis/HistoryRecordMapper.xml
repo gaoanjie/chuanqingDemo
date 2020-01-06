@@ -13,7 +13,7 @@
     </resultMap>
 
     <select id="selectAllHistoryRecord" resultMap="HistoryRecord">
-        select  id,transferdirection,requesttime,sourcepath,targetpath,runningstatus
+        select id,transferdirection,requesttime,sourcepath,targetpath,runningstatus
 		from historyrecord order by id asc
     </select>
 

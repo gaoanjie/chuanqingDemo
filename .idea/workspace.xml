@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2020f506-1d1d-4b15-8a36-0bd3c9ac5a8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jy/chuanqing/mapper/HistoryRecordMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jy/chuanqing/mapper/HistoryRecordMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/HistoryRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/HistoryRecordMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jy/chuanqing/mapper/HistoryRecordMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jy/chuanqing/mapper/HistoryRecordMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/HistoryRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/HistoryRecordMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578044584493</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="传情展示数据，不要分页，框内展示,增加mapper.xml,注解改为xml方式交互">
+      <created>1578294685088</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578294685088</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,13 +249,14 @@
     <MESSAGE value="传情展示数据，待分页" />
     <MESSAGE value="传情展示数据，不要分页，框内展示" />
     <MESSAGE value="传情展示数据，不要分页，框内展示,增加mapper.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="传情展示数据，不要分页，框内展示,增加mapper.xml" />
+    <MESSAGE value="传情展示数据，不要分页，框内展示,增加mapper.xml,注解改为xml方式交互" />
+    <option name="LAST_COMMIT_MESSAGE" value="传情展示数据，不要分页，框内展示,增加mapper.xml,注解改为xml方式交互" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="433" y="108" key="CommitChangelistDialog2" timestamp="1578044583468">
+    <state x="433" y="108" key="CommitChangelistDialog2" timestamp="1578294683543">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="433" y="108" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578044583468" />
+    <state x="433" y="108" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578294683543" />
     <state x="433" y="109" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1577761670385" />
     <state x="717" y="270" key="FileChooserDialogImpl" timestamp="1577760766889">
       <screen x="0" y="0" width="1920" height="1050" />
