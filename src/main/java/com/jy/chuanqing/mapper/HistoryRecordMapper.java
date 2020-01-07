@@ -10,9 +10,20 @@ import java.util.List;
 @Mapper
 @Repository
 public interface HistoryRecordMapper {
-/**
- * 查询全部
- * */
+    /**
+     * 查询全部
+     */
 //    @Select("Select * from historyrecord order by id asc")
     List<HistoryRecord> selectAllHistoryRecord();
+
+    /**
+     * 根据ID查询
+     */
+    @Select("Select * from historyrecord where id = #{id} order by id asc")
+    List<HistoryRecord> selectWhereHistoryRecord(int id);
+
+    /**
+     * 插入一条
+     */
+    int insertHistoryRecord(HistoryRecord historyRecord);
 }

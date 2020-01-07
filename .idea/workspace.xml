@@ -3,7 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="2020f506-1d1d-4b15-8a36-0bd3c9ac5a8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jy/chuanqing/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jy/chuanqing/controller/DemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jy/chuanqing/mapper/HistoryRecordMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jy/chuanqing/mapper/HistoryRecordMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jy/chuanqing/service/HistoryRecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jy/chuanqing/service/HistoryRecordService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/HistoryRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/HistoryRecordMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jy/chuanqing/controller/DemoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jy/chuanqing/controller/DemoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jy/chuanqing/mapper/HistoryRecordMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jy/chuanqing/mapper/HistoryRecordMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jy/chuanqing/service/HistoryRecordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jy/chuanqing/service/HistoryRecordService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/HistoryRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/HistoryRecordMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,25 +271,25 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="717" y="270" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1577760766889" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1578294385939">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1578377702883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578294385939" />
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578377702883" />
     <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1577761710338" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1578294385938">
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1578377702883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578294385938" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578377702883" />
     <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1577761710337" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1578294385938">
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1578377702883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578294385938" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578377702883" />
     <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1577761710337" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1578294385939">
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1578377702883">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578294385939" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578377702883" />
     <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1577761710338" />
     <state x="417" y="90" key="SettingsEditor" timestamp="1577760771607">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -290,6 +299,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="645" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1577758616523" />
+    <state x="616" y="173" width="670" height="676" key="search.everywhere.popup" timestamp="1578359851050">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="173" width="670" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578359851050" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/chuanqingDemo$ChuanqingApplication.ic" NAME="ChuanqingApplication Coverage Results" MODIFIED="1577091016144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

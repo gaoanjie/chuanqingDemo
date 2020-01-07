@@ -15,4 +15,12 @@ public class HistoryRecordService {
     public List<HistoryRecord> selectAllHistoryRecord() {
         return historyRecordMapper.selectAllHistoryRecord();
     }
+
+    public int insertHistoryRecord(HistoryRecord historyRecord) {
+        return historyRecordMapper.insertHistoryRecord(historyRecord);
+    }
+
+    public List<HistoryRecord> selectWhereHistoryRecord(HistoryRecord historyRecord) {
+        return historyRecordMapper.selectWhereHistoryRecord(historyRecord.getId());
+    }
 }
