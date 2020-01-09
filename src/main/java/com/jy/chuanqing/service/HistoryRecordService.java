@@ -16,6 +16,10 @@ public class HistoryRecordService {
         return historyRecordMapper.selectAllHistoryRecord();
     }
 
+    public List<HistoryRecord> selectOneHistoryRecord() {
+        return historyRecordMapper.selectOneHistoryRecord();
+    }
+
     public int insertHistoryRecord(HistoryRecord historyRecord) {
         return historyRecordMapper.insertHistoryRecord(historyRecord);
     }

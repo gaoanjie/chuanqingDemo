@@ -13,7 +13,6 @@ public interface HistoryRecordMapper {
     /**
      * 查询全部
      */
-//    @Select("Select * from historyrecord order by id asc")
     List<HistoryRecord> selectAllHistoryRecord();
 
     /**
@@ -26,4 +25,10 @@ public interface HistoryRecordMapper {
      * 插入一条
      */
     int insertHistoryRecord(HistoryRecord historyRecord);
+
+    /**
+     * 查询正在运行的0表示运行结束，1为正在运行
+     */
+    @Select("Select * from historyrecord where runningstatus = 1 ")
+    List<HistoryRecord> selectOneHistoryRecord();
 }

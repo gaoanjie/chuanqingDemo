@@ -22,11 +22,45 @@ public class DemoController {
      **/
     public String HistoryRecord(Model model) {
         model.addAttribute("historyrecordlist", historyRecordService.selectAllHistoryRecord());
+        List<HistoryRecord> historyRecordList = historyRecordService.selectOneHistoryRecord();
+        if (historyRecordList.size()==0){
+            model.addAttribute("runningstatus", "空闲中");
+        }else {
+            model.addAttribute("runningstatus", "运行中");
+        }
         return "record";
     }
 
-    @RequestMapping("index")
-    public String index() {
+    @RequestMapping("state.html")
+    public String Transfer(Model model) {
+        List<HistoryRecord> historyRecordList = historyRecordService.selectOneHistoryRecord();
+        if (historyRecordList.size()==0){
+            model.addAttribute("id","无");
+            model.addAttribute("transferdirection", "无");
+            model.addAttribute("requesttime", "无");
+            model.addAttribute("sourcepath", "无");
+            model.addAttribute("targetpath", "无");
+            model.addAttribute("targetpath", "无");
+            model.addAttribute("runningstatus", "空闲中");
+        }else {
+            model.addAttribute("id", historyRecordList.get(0).getId());
+            model.addAttribute("transferdirection", historyRecordList.get(0).getTransferdirection());
+            model.addAttribute("requesttime", historyRecordList.get(0).getRequesttime());
+            model.addAttribute("sourcepath", historyRecordList.get(0).getSourcepath());
+            model.addAttribute("targetpath", historyRecordList.get(0).getTargetpath());
+            model.addAttribute("runningstatus", "运行中");
+        }
+        return "state";
+    }
+
+    @RequestMapping("index.html")
+    public String index(Model model) {
+        List<HistoryRecord> historyRecordList = historyRecordService.selectOneHistoryRecord();
+        if (historyRecordList.size()==0){
+            model.addAttribute("runningstatus", "空闲中");
+        }else {
+            model.addAttribute("runningstatus", "运行中");
+        }
         return "index";
     }
 

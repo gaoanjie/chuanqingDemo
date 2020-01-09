@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8"/>
     <title>首页</title>
@@ -149,7 +149,7 @@
             <div class="top_zt">
                 <img src="../condition-bg.png"
                      style="position: absolute;top: 0;right: 0;margin: 0;padding: 0;z-index: 1;"/>
-                <p style="position: absolute;z-index: 555;width: 218px;">运行中</p>
+                <p style="position: absolute;z-index: 555;width: 218px;" th:text="${runningstatus}">运行中</p>
             </div>
         </div>
 

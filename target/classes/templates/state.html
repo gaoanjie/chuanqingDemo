@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8"/>
     <title>历史记录</title>
@@ -238,19 +238,19 @@
             <div class="top_zt">
                 <img src="../condition-bg.png"
                      style="position: absolute;top: 0;right: 0;margin: 0;padding: 0;z-index: 1;"/>
-                <p style="position: absolute;z-index: 555;width: 218px;">空闲中</p>
+                <p style="position: absolute;z-index: 555;width: 218px;" th:text="${runningstatus}">空闲中</p>
             </div>
         </div>
         <div class="sj">
             <div class="zuo">
                 <h2>传输路径</h2>
                 <div class="cslj">
-                    <p>源路径：http://www.192.168.0.010:1010/E;</p>
-                    <p>目标路径：http://www.192.168.0.010:1010/E;</p>
+                    <p th:text="|源路径：${sourcepath}|">源路径：http://www.192.168.0.010:1010/E;</p>
+                    <p th:text="|目标路径：${targetpath}|">目标路径：http://www.192.168.0.010:1010/E;</p>
                 </div>
                 <h2>传输方向</h2>
                 <div class="csfx">
-                    <p>外网 → 内网</p>
+                    <p th:text="${transferdirection}">外网 → 内网</p>
                     <!--<img src="img/jiantou.png" alt="" />-->
                 </div>
             </div>
@@ -301,7 +301,6 @@
             //获取当前运行状态，根据不同的运行状态跳转不同的页面
             var zt = $(".top_zt").text().replace(/^\s+|\s+$/g, "");
             if (zt == "运行中") {
-                console.log(zt)
                 window.location.href = "state.html";
             } else {
                 window.location.href = "index.html";

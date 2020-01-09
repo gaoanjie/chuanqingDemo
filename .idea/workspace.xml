@@ -6,13 +6,14 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jy/chuanqing/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jy/chuanqing/controller/DemoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jy/chuanqing/mapper/HistoryRecordMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jy/chuanqing/mapper/HistoryRecordMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jy/chuanqing/service/HistoryRecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jy/chuanqing/service/HistoryRecordService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/HistoryRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/HistoryRecordMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/record.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/record.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/state.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/state.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jy/chuanqing/controller/DemoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jy/chuanqing/controller/DemoController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jy/chuanqing/mapper/HistoryRecordMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jy/chuanqing/mapper/HistoryRecordMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jy/chuanqing/service/HistoryRecordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jy/chuanqing/service/HistoryRecordService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/HistoryRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/HistoryRecordMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/state.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/state.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,25 +272,25 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="717" y="270" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1577760766889" />
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1578377702883">
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1578538800853">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578377702883" />
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578538800853" />
     <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1577761710338" />
-    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1578377702883">
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1578538800851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578377702883" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578538800851" />
     <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1577761710337" />
-    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1578377702883">
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1578538800850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578377702883" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578538800850" />
     <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1577761710337" />
-    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1578377702883">
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1578538800852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578377702883" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578538800852" />
     <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1577761710338" />
     <state x="417" y="90" key="SettingsEditor" timestamp="1577760771607">
       <screen x="0" y="0" width="1920" height="1050" />
